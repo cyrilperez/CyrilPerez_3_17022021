@@ -4,3 +4,8 @@
 $couleurPrimaire : #9356DC;
 $couleurSecondaire : #FF79DA;
 $couleurTertiaire : #99E2D0;
+
+$tablet : 768px
+$desktop : 1300px
+$only-tablet : "only screen and (min width: #{$tablet})"
+$only-desktop : "only screen and (min width: #{$desktop})"
