@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 body {
   background-color: white;
   font-family: "Roboto", "sans-serif";
@@ -20,6 +20,34 @@ li {
   list-style-type: none;
 }
 
+h1 {
+  font: caption;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 0px;
+  padding-top: 1em;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 1em;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.btn {
+  background: transparent;
+  padding: 0.9rem 0rem;
+  margin: 1em 4em;
+  border: none;
+  border-radius: 2em;
+  color: white;
+  box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.5);
+}
+.btn-filled {
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -33,7 +61,7 @@ li {
   background-color: rgba(128, 128, 128, 0.15);
   display: flex;
   justify-content: center;
-  box-shadow: inset 0em 1em 5px -10px #gray;
+  box-shadow: inset 0em 1em 5px -10px grey;
   border-top: 1px solid grey;
   padding: 1em;
 }
@@ -41,18 +69,21 @@ li {
 .banner {
   background-color: rgba(192, 192, 192, 0.15);
   margin-top: 0em;
+  padding-bottom: 2.5em;
+  text-align: center;
 }
-
-body {
-  background-color: white;
-  font-family: "Roboto", "sans-serif";
-  margin-top: 0px;
-  margin-left: 0px;
+.banner_title {
+  padding-top: 1.5em;
 }
-
-.container {
-  width: 365px;
-  margin: 0px auto;
+.banner_h1 {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 0em;
+}
+.banner_h2 {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
