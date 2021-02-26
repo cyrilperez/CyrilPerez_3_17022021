@@ -9,11 +9,11 @@
 }
 
 .localisation {
-    background-color: rgba(128, 128, 128, 0.15);
+    background-color: $background-banner-gris;
     display: flex;
     justify-content: center;
-    box-shadow: inset 0em 1em 5px -10px grey;
-    border-top: 1px solid grey;
+    box-shadow: inset 0em 1em 5px -16px grey;
+ /*   border-top: 1px solid grey; */
     padding : 1em;
         
 }

@@ -1,4 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+.loader {
+  animation: spin 6s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #9356DC;
+  border-top-color: #FF79DA;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+}
+.loader_white {
+  height: 2000px;
+  width: 100%;
+  background-color: white;
+}
+.loader:before {
+  animation: spin 10s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #9356DC;
+  border-top-color: #FF79DA;
+  box-sizing: border-box;
+  content: "";
+  height: 16vmin;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16vmin;
+}
+.loader:after {
+  animation: spin 15s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #9356DC;
+  border-top-color: #FF79DA;
+  box-sizing: border-box;
+  content: "";
+  height: 12vmin;
+  left: 2vmin;
+  position: absolute;
+  top: 2vmin;
+  width: 12vmin;
+}
+.loader_visibilite {
+  height: 5000px;
+  transition-delay: 5s;
+  transition-property: display;
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes vis {
+  0% {
+    height: 5000px;
+  }
+  100% {
+    height: 0px;
+  }
+}
 body {
   background-color: white;
   font-family: "Roboto", "sans-serif";
@@ -35,6 +102,11 @@ h2 {
   font-size: 1.1em;
 }
 
+section {
+  padding-top: 1.5em;
+  background-color: rgba(192, 192, 192, 0.15);
+}
+
 .btn {
   background: transparent;
   padding: 0.9rem 0rem;
@@ -42,10 +114,43 @@ h2 {
   border: none;
   border-radius: 2em;
   color: white;
-  box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.5);
+  box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
 }
 .btn-filled {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
+.btn-fonctionnement {
+  display: flex;
+  color: black;
+  margin: 1em 0em 0em 2.5em;
+  padding: 1.5em 0em 1.5em 0em;
+  background-color: rgba(192, 192, 192, 0.15);
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  border-radius: 1.5em;
+}
+.btn_puce {
+  position: relative;
+  left: -4em;
+  color: white;
+  background-color: #9356DC;
+  padding: 0.3em 0.6em;
+  border-radius: 1em;
+}
+.btn-iconSize {
+  font-size: 1.3em;
+  color: grey;
+}
+.btn_icon {
+  position: relative;
+  left: -2.5em;
+  font-weight: bold;
+}
+.btn_text {
+  position: relative;
+  left: -1em;
+  font-weight: bold;
 }
 
 .logo {
@@ -58,11 +163,11 @@ h2 {
 }
 
 .localisation {
-  background-color: rgba(128, 128, 128, 0.15);
+  background-color: rgba(192, 192, 192, 0.15);
   display: flex;
   justify-content: center;
-  box-shadow: inset 0em 1em 5px -10px grey;
-  border-top: 1px solid grey;
+  box-shadow: inset 0em 1em 5px -16px grey;
+  /*   border-top: 1px solid grey; */
   padding: 1em;
 }
 
@@ -84,6 +189,29 @@ h2 {
   margin-left: 1.5em;
   margin-right: 1.5em;
   margin-bottom: 1.5em;
+}
+
+.menu {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+
+.restaurantCard {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.restaurantCard_image {
+  border-radius: 20px 20px 0px 0px;
+  height: 100px;
+  width: 230px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
