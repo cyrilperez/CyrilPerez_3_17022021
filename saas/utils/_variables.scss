@@ -11,4 +11,9 @@ $desktop : 1300px;
 $only-tablet : "only screen and (min width: #{$tablet})";
 $only-desktop : "only screen and (min width: #{$desktop})";
 
-$base-font-size : 16px
+$base-font-size : 16px;
+
+$background-banner-gris : rgba(192, 192, 192, 0.15);
+
+$text-button-fonctionnement : black;
+$radius-button-fonctionnement : 15px;

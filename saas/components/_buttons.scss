@@ -5,9 +5,43 @@
     border: none;
     border-radius: 2em;
     color: white;
-    box-shadow: 3px 3px 6px rgb(128, 128, 128, .5);
+    box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
     
     &-filled {
       @include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
+    }
+    &-fonctionnement {
+        display: flex;
+        color: black;
+        margin: 1em 0em 0em 2.5em;
+        padding: 1.5em 0em 1.5em 0em;
+        background-color: $background-banner-gris;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        border-radius: 1.5em;
+    }
+    &_puce {
+        position: relative;
+        left:-4em;
+        color: white;
+        background-color: $couleurPrimaireViolet;
+        padding: 0.3em 0.6em;
+        border-radius: 1em;
+    }
+    &-iconSize {
+        font-size: 1.3em;
+        color: grey;
+    }
+    &_icon {
+        position: relative;
+        left: -2.5em;
+        font-weight: bold;
+    }
+    &_text {
+        position: relative;
+        left: -1em;
+        font-weight: bold;
+
     }
 }
