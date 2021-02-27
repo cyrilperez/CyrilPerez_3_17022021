@@ -108,6 +108,23 @@ section {
   background-color: rgba(192, 192, 192, 0.15);
 }
 
+.footer {
+  padding-left: 1em;
+  background-color: #313131;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.footer_logo {
+  color: white;
+  font-family: Shrikhand;
+}
+.footer_menu {
+  color: white;
+}
+.footer_menu-bold {
+  font-weight: bold;
+}
+
 .btn {
   background: transparent;
   padding: 0.9rem 0rem;
@@ -263,7 +280,10 @@ section {
   font-size: 1.5em;
 }
 .restaurantCard_like:hover {
-  color: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
+.restaurantCard:hover {
+  border-radius: 2px solid #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

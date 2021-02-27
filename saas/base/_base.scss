@@ -39,3 +39,20 @@ section {
     padding-bottom: 3em;
     background-color: $background-banner-gris;
 }
+
+.footer {
+    padding-left: 1em;
+    background-color: rgb(49, 49, 49);
+    padding-top: 3em;
+    padding-bottom: 2em;
+    &_logo {
+        color: white;
+        font-family: Shrikhand;
+    }
+    &_menu{
+        color: white;
+        &-bold{
+            font-weight: bold;
+        }
+    }
+}
