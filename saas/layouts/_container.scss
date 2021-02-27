@@ -41,9 +41,9 @@
 	box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
 	border-radius: 15px;
 	&:hover{
-		border-radius: 2px solid $couleurTertiaireBleu;
+		border: 2px solid $couleurTertiaireBleu;
 	}
-	
+
 	&_image{
 		border-radius: 15px 15px 0px 0px;
 		height:10.4em;
@@ -64,7 +64,7 @@
 	&_label{
 		position: relative;
 		left: 8em;
-		top: -10.5em;
+		top: -9.5em;
 		background-color: hsla(165,56%,74%,1);
 		padding: 5px 11px;
 		font-size: 0.9em;
