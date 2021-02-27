@@ -20,5 +20,12 @@
     background-image:
       -webkit-linear-gradient($dir, $from, $to),
   }
+  
+  @mixin color-gradient($dir, $from, $to) {
+    color:
+      -webkit-linear-gradient($dir, $from, $to),
+  }
+
+
 
   

@@ -104,6 +104,7 @@ h2 {
 
 section {
   padding-top: 1.5em;
+  padding-bottom: 3em;
   background-color: rgba(192, 192, 192, 0.15);
 }
 
@@ -205,13 +206,64 @@ section {
 .restaurantCard {
   display: flex;
   align-items: center;
+  flex-direction: column;
   width: 90%;
+  margin-left: 5%;
+  margin-bottom: 1em;
+  box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
+  border-radius: 15px;
 }
 .restaurantCard_image {
-  border-radius: 20px 20px 0px 0px;
-  height: 100px;
-  width: 230px;
+  border-radius: 15px 15px 0px 0px;
+  height: 10.4em;
+  width: 100%;
   object-fit: cover;
+  margin-bottom: -1em;
+}
+.restaurantCard_image1 {
+  object-position: 0% 100%;
+}
+.restaurantCard_image2 {
+  object-position: 0% 61%;
+}
+.restaurantCard_image3 {
+  object-position: 0% 100%;
+}
+.restaurantCard_image4 {
+  object-position: 0% 100%;
+}
+.restaurantCard_label {
+  position: relative;
+  left: 8em;
+  top: -10.5em;
+  background-color: #98e2cf;
+  padding: 5px 11px;
+  font-size: 0.9em;
+  color: #33947c;
+}
+.restaurantCard_name {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.restaurantCard-alignTextCard {
+  align-self: flex-start;
+  margin-left: 1em;
+  color: black;
+}
+.restaurantCard_quartier {
+  font-weight: lighter;
+  margin-bottom: -1em;
+}
+.restaurantCard_like {
+  position: relative;
+  left: 5em;
+  top: -1em;
+  color: black;
+  font-size: 1.5em;
+}
+.restaurantCard_like:hover {
+  color: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */

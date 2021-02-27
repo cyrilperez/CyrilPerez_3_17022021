@@ -46,6 +46,7 @@
 		height:10.4em;
 		width: 100%;
 		object-fit: cover;
+		margin-bottom: -1em;
 	}
 	&_image1{
 		object-position: 0% 100%;
@@ -68,14 +69,28 @@
 	}
 
 	&_name {
+		margin-top: 1em;
 		font-weight: bold;
-    	color: black;
     	font-size: 1.1em;
-		}
+	}
 	&-alignTextCard {
 		align-self: flex-start;
 		margin-left: 1em;
-	
+		color: black;
+	}
+	&_quartier {
+		font-weight: lighter;
+		margin-bottom: -1em;
+	}
+	&_like {
+		position: relative;
+    	left: 5em;
+    	top: -1em;
+    	color: black;
+    	font-size: 1.5em;
+		&:hover {
+			@include color-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
+		}
 	}
 	
 
