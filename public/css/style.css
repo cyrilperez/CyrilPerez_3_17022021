@@ -230,6 +230,9 @@ section {
   box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
   border-radius: 15px;
 }
+.restaurantCard:hover {
+  border-radius: 2px solid #99E2D0;
+}
 .restaurantCard_image {
   border-radius: 15px 15px 0px 0px;
   height: 10.4em;
@@ -281,9 +284,6 @@ section {
 }
 .restaurantCard_like:hover {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-}
-.restaurantCard:hover {
-  border-radius: 2px solid #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

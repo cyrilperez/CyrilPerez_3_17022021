@@ -40,7 +40,10 @@
     margin-bottom: 1em;
 	box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
 	border-radius: 15px;
-
+	&:hover{
+		border-radius: 2px solid $couleurTertiaireBleu;
+	}
+	
 	&_image{
 		border-radius: 15px 15px 0px 0px;
 		height:10.4em;
@@ -92,8 +95,6 @@
 			@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
 		}
 	}
-	&:hover{
-		border-radius: 2px solid $couleurTertiaireBleu;
-	}
+
 
 }
