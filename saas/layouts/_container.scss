@@ -33,12 +33,50 @@
 
 .restaurantCard {
 	display: flex;
-	align-items: center;
-	width: 90%;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1em;
+	box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
+	border-radius: 15px;
+
 	&_image{
-		border-radius: 20px 20px 0px 0px;
-		height:100px;
-		width: 230px;
+		border-radius: 15px 15px 0px 0px;
+		height:10.4em;
+		width: 100%;
 		object-fit: cover;
 	}
+	&_image1{
+		object-position: 0% 100%;
+	}&_image2{
+		object-position: 0% 61%;
+	}&_image3{
+		object-position: 0% 100%;
+	}&_image4{
+		object-position: 0% 100%;
+	}
+
+	&_label{
+		position: relative;
+		left: 8em;
+		top: -10.5em;
+		background-color: hsla(165,56%,74%,1);
+		padding: 5px 11px;
+		font-size: 0.9em;
+		color: hsla(165,49%,39%,1);
+	}
+
+	&_name {
+		font-weight: bold;
+    	color: black;
+    	font-size: 1.1em;
+		}
+	&-alignTextCard {
+		align-self: flex-start;
+		margin-left: 1em;
+	
+	}
+	
+
 }
