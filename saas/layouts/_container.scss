@@ -17,11 +17,18 @@
 		margin-right: 1.5em;
 		margin-bottom: 1.5em;
 	}
+	&-menu{
+		overflow: hidden;
+
+	}
 }
 
 .menu {
 	margin-top: 1em;
 	margin-left: 1em;
+	&-menu{
+		font-weight: lighter;
+	}
 }
 
 .fonctionnement {
@@ -50,6 +57,12 @@
 		width: 100%;
 		object-fit: cover;
 		margin-bottom: -1em;
+	&-menu {
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: -3em;
+
+	}
 	}
 	&_image1{
 		object-position: 0% 100%;
@@ -91,10 +104,40 @@
     	top: -1em;
     	color: black;
     	font-size: 1.5em;
+		&-menu{
+			padding-top: 1em;
+			color: black;
+			font-size: 1.5em;
+			&:hover {
+				@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
+			}	
+		}
 		&:hover {
 			@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
 		}
 	}
 
 
+}
+
+.nameRestaurant {
+	display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    /* margin-top: -1em; */
+    overflow: overlay;
+    border-radius: 50px 50px 0px 0px;
+    /* width: 100%; */
+	&_title {
+		padding-top: 1em;
+		font-family: 'Shrikhand';
+		font-size: 1.6em;
+	}
+	&_like{
+
+		&:hover{
+
+		}
+	}
 }

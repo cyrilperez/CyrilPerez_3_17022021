@@ -173,6 +173,8 @@ section {
 
 .headerMenu {
   display: flex;
+  align-items: center;
+  margin-left: 2em;
 }
 
 .logo {
@@ -183,6 +185,10 @@ section {
 .logo_width {
   width: 50%;
 }
+.logo_width-menu {
+  width: 50%;
+  margin-left: -1em;
+}
 
 .localisation {
   background-color: rgba(192, 192, 192, 0.15);
@@ -191,6 +197,10 @@ section {
   box-shadow: inset 0em 1em 5px -16px grey;
   /*   border-top: 1px solid grey; */
   padding: 1em;
+}
+
+.flecheHeader {
+  font-size: 1em;
 }
 
 .banner {
@@ -212,10 +222,16 @@ section {
   margin-right: 1.5em;
   margin-bottom: 1.5em;
 }
+.banner-menu {
+  overflow: hidden;
+}
 
 .menu {
   margin-top: 1em;
   margin-left: 1em;
+}
+.menu-menu {
+  font-weight: lighter;
 }
 
 .fonctionnement {
@@ -243,6 +259,11 @@ section {
   width: 100%;
   object-fit: cover;
   margin-bottom: -1em;
+}
+.restaurantCard_image-menu {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3em;
 }
 .restaurantCard_image1 {
   object-position: 0% 100%;
@@ -286,8 +307,32 @@ section {
   color: black;
   font-size: 1.5em;
 }
+.restaurantCard_like-menu {
+  padding-top: 1em;
+  color: black;
+  font-size: 1.5em;
+}
+.restaurantCard_like-menu:hover {
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
 .restaurantCard_like:hover {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
+
+.nameRestaurant {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  /* margin-top: -1em; */
+  overflow: overlay;
+  border-radius: 50px 50px 0px 0px;
+  /* width: 100%; */
+}
+.nameRestaurant_title {
+  padding-top: 1em;
+  font-family: "Shrikhand";
+  font-size: 1.6em;
 }
 
 /*# sourceMappingURL=style.css.map */
