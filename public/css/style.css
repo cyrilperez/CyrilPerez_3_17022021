@@ -231,7 +231,15 @@ section {
   margin-left: 1em;
 }
 .menu-menu {
-  font-weight: lighter;
+  font-weight: 300;
+  margin-left: 1em;
+  font-size: 1.3em;
+  font-variant-caps: all-petite-caps;
+}
+.menu-menu-line {
+  color: #99E2D0;
+  margin-top: -0.5em;
+  margin-bottom: 1em;
 }
 
 .fonctionnement {
@@ -333,6 +341,9 @@ section {
   padding-top: 1em;
   font-family: "Shrikhand";
   font-size: 1.6em;
+}
+.article {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
