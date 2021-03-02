@@ -111,7 +111,7 @@ section {
 .footer {
   padding-left: 1em;
   background-color: #313131;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-bottom: 2em;
 }
 .footer_logo {
@@ -120,9 +120,11 @@ section {
 }
 .footer_menu {
   color: white;
+  margin: 0.5em 0em 0em 0em;
+  font-weight: 300;
 }
 .footer_menu-bold {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .btn {
@@ -319,6 +321,7 @@ section {
   padding-top: 1em;
   color: black;
   font-size: 1.5em;
+  margin-right: 1.5em;
 }
 .restaurantCard_like-menu:hover {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
@@ -330,7 +333,7 @@ section {
 .nameRestaurant {
   display: flex;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: whitesmoke;
   /* margin-top: -1em; */
   overflow: overlay;
@@ -338,11 +341,27 @@ section {
   /* width: 100%; */
 }
 .nameRestaurant_title {
+  margin-left: 1em;
   padding-top: 1em;
   font-family: "Shrikhand";
   font-size: 1.6em;
 }
+
 .article {
+  display: flex;
+  margin-bottom: 1em;
+  width: 88%;
+  margin-left: 1em;
+  background-color: white;
+  padding: 0.5em;
+  justify-content: space-between;
+  border-radius: 1em;
+}
+.article_name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.article_description {
   display: flex;
 }
 
