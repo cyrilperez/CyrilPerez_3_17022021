@@ -1,70 +1,48 @@
-.loader {
-    
-    animation:spin 6s infinite linear;
-    border:solid 2vmin transparent;
-    border-radius:50%;
-    border-right-color:$couleurPrimaireViolet;
-    border-top-color:$couleurSecondaireRose;
-    box-sizing:border-box;
-    height:20vmin;
-    left:calc(50% - 10vmin);
-    position:fixed;
-    top:calc(50% - 10vmin);
-    width:20vmin;
-    z-index:1;
-    &_white {
-        height: 2000px;
-        width: 100%;
-        background-color: white;
-    }
-    &:before {
-      animation:spin 10s infinite linear;
-      border:solid 2vmin transparent;
-      border-radius:50%;
-      border-right-color:$couleurPrimaireViolet;
-      border-top-color:$couleurSecondaireRose;
-      box-sizing:border-box;
-      content:"";
-      height:16vmin;
-      left:0;
-      position:absolute;
-      top:0;
-      width:16vmin;
-    }
-    &:after {
-      animation:spin 15s infinite linear;
-      border:solid 2vmin transparent;
-      border-radius:50%;
-      border-right-color:$couleurPrimaireViolet;
-      border-top-color:$couleurSecondaireRose;
-      box-sizing:border-box;
-      content:"";
-      height:12vmin;
-      left:2vmin;
-      position:absolute;
-      top:2vmin;
-      width:12vmin;
-    }
-    &_visibilite {
-        height: 5000px;
-        transition-delay: 5s;
-        transition-property: display;
-        display:none;}
-  }
-  
-  @keyframes spin {
-    100% {
-      transform:rotate(360deg);
-    
-    }
+.loaderdiv {
+	line-height: 500px;
+	background-color: white;
+	text-align: center;
+	color: black;
+    font-family: Shrikhand;
+	font-size: 2em;
+	animation: height 3s cubic-bezier(1, -1.31, 1, -0.17);
+	position: relative;
+	height :0px;
+	opacity: 0;
+
 }
-    @keyframes vis {
-        0% {
-            height: 5000px;
-        
-        }
-        100% {
-            height: 0px;
-        
-        }
-  }
+.loader {
+	
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	&-quart {
+	position: relative;
+	border-radius: 50px;
+	border : 6px solid rgba(255,255,255,0.4);
+	&::after{
+		content: "";
+		position: absolute;
+		top:-6px;
+		left:-6px;
+		bottom:-6px;
+		right:-6px;
+		border-radius: 50px;
+		border : 6px solid transparent;
+		border-top-color: $couleurPrimaireViolet;
+		animation: spin 1s linear infinite;
+	}
+}
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@keyframes height {
+	0% {height: 2000px;opacity: 1;}
+	100% {height: 0px;opacity: 0;}
+}

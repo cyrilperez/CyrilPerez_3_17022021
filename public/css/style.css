@@ -1,76 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
-.loader {
-  animation: spin 6s infinite linear;
-  border: solid 2vmin transparent;
-  border-radius: 50%;
-  border-right-color: #9356DC;
-  border-top-color: #FF79DA;
-  box-sizing: border-box;
-  height: 20vmin;
-  left: calc(50% - 10vmin);
-  position: fixed;
-  top: calc(50% - 10vmin);
-  width: 20vmin;
-  z-index: 1;
-}
-.loader_white {
-  height: 2000px;
-  width: 100%;
+.loaderdiv {
+  line-height: 500px;
   background-color: white;
+  text-align: center;
+  color: black;
+  font-family: Shrikhand;
+  font-size: 2em;
+  animation: height 3s cubic-bezier(1, -1.31, 1, -0.17);
+  position: relative;
+  height: 0px;
+  opacity: 0;
 }
-.loader:before {
-  animation: spin 10s infinite linear;
-  border: solid 2vmin transparent;
-  border-radius: 50%;
-  border-right-color: #9356DC;
-  border-top-color: #FF79DA;
-  box-sizing: border-box;
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.loader-quart {
+  position: relative;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+.loader-quart::after {
   content: "";
-  height: 16vmin;
-  left: 0;
   position: absolute;
-  top: 0;
-  width: 16vmin;
-}
-.loader:after {
-  animation: spin 15s infinite linear;
-  border: solid 2vmin transparent;
-  border-radius: 50%;
-  border-right-color: #9356DC;
-  border-top-color: #FF79DA;
-  box-sizing: border-box;
-  content: "";
-  height: 12vmin;
-  left: 2vmin;
-  position: absolute;
-  top: 2vmin;
-  width: 12vmin;
-}
-.loader_visibilite {
-  height: 5000px;
-  transition-delay: 5s;
-  transition-property: display;
-  display: none;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
   100% {
     transform: rotate(360deg);
   }
 }
-@keyframes vis {
+@keyframes height {
   0% {
-    height: 5000px;
+    height: 2000px;
+    opacity: 1;
   }
   100% {
     height: 0px;
+    opacity: 0;
   }
 }
 body {
   background-color: white;
   font-family: "Roboto", "sans-serif";
-  margin-top: 0px;
-  margin-left: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
