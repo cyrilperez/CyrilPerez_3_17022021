@@ -197,6 +197,29 @@ section {
   font-weight: bold;
 }
 
+.heart i:nth-of-type(1) {
+  position: relative;
+  left: 24px;
+}
+.heart i:nth-of-type(2n) {
+  color: white;
+}
+.heart:hover i:nth-of-type(1) {
+  display: none;
+}
+.heart:hover i:nth-of-type(2n) {
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heart2 {
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .headerMenu {
   display: flex;
   align-items: center;
@@ -346,15 +369,6 @@ section {
   color: black;
   font-size: 1.5em;
   margin-right: 1.5em;
-}
-.restaurantCard_like-menu:hover {
-  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-}
-.restaurantCard_like-hover:hover {
-  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-}
-.restaurantCard_like:hover {
-  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
 }
 
 .nameRestaurant {

@@ -117,17 +117,6 @@
 			color: black;
 			font-size: 1.5em;
 			margin-right: 1.5em;
-			&:hover {
-				@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
-			}	
-		}&-hover{
-			
-			&:hover {
-				@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
-			}	
-		}
-		&:hover {
-			@include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
 		}
 	}
 
