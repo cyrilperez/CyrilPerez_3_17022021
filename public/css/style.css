@@ -55,6 +55,26 @@
     opacity: 0;
   }
 }
+@keyframes transleft {
+  0% {
+    transform: translate(0px, 0px);
+    width: 0%;
+  }
+  100% {
+    transform: translate(-3em, 0px);
+    width: 10%;
+  }
+}
+@keyframes transition {
+  0% {
+    bottom: -1em;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
 body {
   background-color: white;
   font-family: "Roboto", "sans-serif";
@@ -315,6 +335,9 @@ section {
 .restaurantCard_like-menu:hover {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
 }
+.restaurantCard_like-hover:hover {
+  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
 .restaurantCard_like:hover {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
 }
@@ -338,20 +361,60 @@ section {
 
 .article {
   display: flex;
+  position: relative;
+  bottom: -1em;
   margin-bottom: 1em;
   width: 88%;
   margin-left: 1em;
   background-color: white;
-  padding: 0.5em;
   justify-content: space-between;
   border-radius: 1em;
+  opacity: 0;
+  overflow: hidden;
+  animation: transition 1s ease-in-out 2s forwards;
+}
+.article_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .article_name {
   font-weight: 500;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
   font-size: 1.2em;
 }
 .article_description {
   display: flex;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+}
+.article_description-text {
+  font-size: 0.8em;
+}
+.article_selection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  background-color: #99E2D0;
+  padding: 0.5em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  width: 0%;
+  right: -3em;
+}
+.article:hover .article_selection {
+  animation: transleft 1s linear forwards;
+}
+.article_selection-check {
+  color: white;
+}
+.article:hover .article_selection-check {
+  animation: spin 1s reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
