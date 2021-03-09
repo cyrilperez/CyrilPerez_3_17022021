@@ -1,14 +1,18 @@
 .btn {
     background: transparent;
-    padding: 0.9rem 0rem;
+    padding: 0.9rem 1rem;
     margin: 1em 4em;
     border: none;
     border-radius: 2em;
+    text-align: center;
     color: white;
     box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
     
     &-filled {
       @include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
+    &:hover {
+        filter: brightness(90%);
+    }
     }
     &-fonctionnement {
         display: flex;
@@ -20,6 +24,10 @@
         align-items: center;
         width: 85%;
         border-radius: 1.5em;
+        &:hover {
+           background-color: lighten($couleurPrimaireViolet, $amount: 30%);
+           opacity: 0.9;
+        }
     }
     &_puce {
         position: relative;
@@ -28,15 +36,24 @@
         background-color: $couleurPrimaireViolet;
         padding: 0.3em 0.6em;
         border-radius: 1em;
+        .btn:hover &{
+            
+            opacity: 1.5;
+        }
     }
     &-iconSize {
         font-size: 1.3em;
         color: grey;
+        .btn:hover &{
+            color: $couleurPrimaireViolet;
+            opacity: 1.5;
+        }
     }
     &_icon {
         position: relative;
         left: -2.5em;
         font-weight: bold;
+        
     }
     &_text {
         position: relative;

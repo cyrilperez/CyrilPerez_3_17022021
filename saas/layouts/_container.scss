@@ -187,6 +187,10 @@
 		}
 	}
 	&_selection {
+		&::before {
+			
+		animation: transleft 1s linear forwards;
+		}
 		position: relative;
 		display: flex;
 		align-items: center;

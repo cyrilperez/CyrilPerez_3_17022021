@@ -138,15 +138,19 @@ section {
 
 .btn {
   background: transparent;
-  padding: 0.9rem 0rem;
+  padding: 0.9rem 1rem;
   margin: 1em 4em;
   border: none;
   border-radius: 2em;
+  text-align: center;
   color: white;
   box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
 }
 .btn-filled {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
+}
+.btn-filled:hover {
+  filter: brightness(90%);
 }
 .btn-fonctionnement {
   display: flex;
@@ -159,6 +163,10 @@ section {
   width: 85%;
   border-radius: 1.5em;
 }
+.btn-fonctionnement:hover {
+  background-color: #e4d5f6;
+  opacity: 0.9;
+}
 .btn_puce {
   position: relative;
   left: -4em;
@@ -167,9 +175,16 @@ section {
   padding: 0.3em 0.6em;
   border-radius: 1em;
 }
+.btn:hover .btn_puce {
+  opacity: 1.5;
+}
 .btn-iconSize {
   font-size: 1.3em;
   color: grey;
+}
+.btn:hover .btn-iconSize {
+  color: #9356DC;
+  opacity: 1.5;
 }
 .btn_icon {
   position: relative;
@@ -406,6 +421,9 @@ section {
   border-bottom-right-radius: 1em;
   width: 0%;
   right: -3em;
+}
+.article_selection::before {
+  animation: transleft 1s linear forwards;
 }
 .article:hover .article_selection {
   animation: transleft 1s linear forwards;
