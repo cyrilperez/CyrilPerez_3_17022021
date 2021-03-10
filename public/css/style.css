@@ -367,16 +367,6 @@ section {
   font-size: 0.9em;
   color: #33947c;
 }
-.restaurantCard_label2 {
-  position: relative;
-  left: 16em;
-  top: -9.5em;
-  background-color: #98e2cf;
-  padding: 5px 11px;
-  font-size: 0.9em;
-  color: #33947c;
-  width: 4em;
-}
 .restaurantCard_name {
   margin-top: 1em;
   font-weight: bold;
@@ -395,7 +385,6 @@ section {
   position: relative;
   left: 5em;
   top: -1em;
-  color: black;
   font-size: 1.5em;
 }
 .restaurantCard_like-menu {
@@ -486,7 +475,7 @@ section {
 .localisation {
   background-color: rgba(192, 192, 192, 0.15);
   display: flex;
-  justify-content: center;
+  text-align: center;
   box-shadow: inset 0em 1em 5px -16px grey;
   /*   border-top: 1px solid grey; */
   padding: 1em;

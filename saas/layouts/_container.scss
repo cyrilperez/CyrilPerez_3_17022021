@@ -91,16 +91,6 @@
 		font-size: 0.9em;
 		color: hsla(165,49%,39%,1);
 	}
-	&_label2 {
-		position: relative;
-    left: 16em;
-    top: -9.5em;
-    background-color: #98e2cf;
-    padding: 5px 11px;
-    font-size: 0.9em;
-    color: #33947c;
-    width: 4em;
-	}
 	&_name {
 		margin-top: 1em;
 		font-weight: bold;
@@ -119,7 +109,6 @@
 		position: relative;
     	left: 5em;
     	top: -1em;
-    	color: black;
     	font-size: 1.5em;
 		&-menu{
 			padding-top: 1em;
