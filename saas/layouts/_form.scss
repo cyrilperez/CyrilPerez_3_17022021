@@ -1,0 +1,18 @@
+.localisation {
+    background-color: $background-banner-gris;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0em 1em 5px -16px grey;
+ /*   border-top: 1px solid grey; */
+    padding : 1em;  
+    &_paris {
+        border:none;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        width: 60%;
+    }    
+    &_form {
+        width: 50%;
+    } 
+}
