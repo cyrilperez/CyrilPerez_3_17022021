@@ -514,6 +514,16 @@ section {
   .restaurantCard {
     width: 42%;
   }
+
+  .article {
+    width: 47%;
+  }
+
+  .listeArticle {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+  }
 }
 @media (min-width: 1024px) {
   .restaurantCard {
@@ -524,6 +534,16 @@ section {
   }
   .restaurantCard_like {
     left: 4em;
+  }
+
+  .article {
+    width: 30%;
+  }
+
+  .listeArticle {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
   }
 }
 .localisation {
