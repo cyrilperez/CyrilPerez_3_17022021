@@ -206,3 +206,32 @@
 
 }
 
+@media (min-width: 768px) {
+	.fonctionnement {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 3em;
+		margin-right: 2em;
+	}   
+	.restaurant {
+		display: flex;
+		flex-flow: wrap;
+		flex-direction: row;
+	}
+	.restaurantCard {
+		width: 42%;
+	
+	}
+}
+
+@media (min-width: 1024px) {
+    .restaurantCard {
+		width: 28%;
+		&_label {
+			left: 6em;
+		}
+		&_like {
+			left:4em;
+		}
+	}
+}

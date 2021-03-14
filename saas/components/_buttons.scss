@@ -126,3 +126,31 @@
     -webkit-background-clip: text;
     
 }
+
+@media (min-width: 768px) {
+    .btn {
+        
+        &-fonctionnement {
+           
+            margin: 1em 0em 0em 2.5em;
+            
+            
+        }
+        &_puce {
+            left:-1em;
+        }
+        &_icon {
+         
+            left: 0em;
+                     
+        }
+        &_text {
+         
+            left: -1em;
+         
+            width: 73%;
+    
+        }
+    }   
+}
+
