@@ -14,6 +14,22 @@
         font-size: 1em;
     }    
     &_form {
-        width: 50%;
+        width: 65%;
     } 
+}
+
+@media (min-width: 768px) {
+    .localisation{
+        &_form {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .localisation{
+        &_form {
+            width: 20%;
+        }
+    }
 }

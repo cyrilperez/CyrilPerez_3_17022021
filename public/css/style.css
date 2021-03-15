@@ -366,10 +366,33 @@ section {
   object-fit: cover;
   margin-bottom: -1em;
 }
-.restaurantCard_image-menu {
+.restaurantCard_image-menu1 {
   width: 100%;
   object-fit: cover;
   margin-bottom: -3em;
+  height: 15em;
+  object-position: 0% 100%;
+}
+.restaurantCard_image-menu2 {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3em;
+  height: 15em;
+  object-position: 0% 74%;
+}
+.restaurantCard_image-menu3 {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3em;
+  height: 15em;
+  object-position: 0% 100%;
+}
+.restaurantCard_image-menu4 {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -3em;
+  height: 15em;
+  object-position: 0% 100%;
 }
 .restaurantCard_image1 {
   object-position: 0% 100%;
@@ -563,7 +586,18 @@ section {
   font-size: 1em;
 }
 .localisation_form {
-  width: 50%;
+  width: 65%;
+}
+
+@media (min-width: 768px) {
+  .localisation_form {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .localisation_form {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

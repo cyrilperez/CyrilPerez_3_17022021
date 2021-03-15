@@ -65,11 +65,35 @@
 		width: 100%;
 		object-fit: cover;
 		margin-bottom: -1em;
-	&-menu {
+	&-menu1 {
 		width: 100%;
 		object-fit: cover;
 		margin-bottom: -3em;
+		height: 15em;
+    	object-position: 0% 100%;
 
+	}
+	&-menu2 {
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: -3em;
+		height: 15em;
+    	object-position: 0% 74%;
+
+	}
+	&-menu3 {
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: -3em;
+		height: 15em;
+    	object-position: 0% 100%;
+	}
+	&-menu4 {
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: -3em;
+		height: 15em;
+    	object-position: 0% 100%;
 	}
 	}
 	&_image1{
