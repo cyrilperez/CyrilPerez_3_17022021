@@ -13,7 +13,7 @@
     background-size: 100% $width;
     background-position: 0 100%, 0 0;
     background-repeat: no-repeat;
-    background-clip: content-box;
+    background-clip: border-box;
   }
   
   @mixin background-gradient($dir, $from, $to) {
