@@ -6,13 +6,15 @@
     }
   
     &_steps {
-    display: flex;
-    flex-direction: column;
-    width: 90%; 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: compteListe;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: compteListe;
+  
+      @media (min-width:768px) {
+        display: flex;
+        justify-content: space-around;
+      }
     }
   
     &_step {
@@ -23,6 +25,15 @@
       background-color: #f6f6f6;
       display: flex;
       position: relative;
+      @media (min-width:768px) {
+        width: 20%;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      @media (min-width:1024px) {
+        width: 25%;
+      }
       &:hover {
         background-color: lighten($couleurPrimaireViolet, $amount: 30%);
         opacity: 0.9;
@@ -30,15 +41,7 @@
 
       
   
-      @media (min-width:64rem) {
-        flex: 1;
-        margin: 0;
-        margin-left: 2rem;
-  
-        &:first-child {
-          margin-left: 0.75rem;
-        }
-      }
+      
   
       &:first-child {
         margin-top: 0;

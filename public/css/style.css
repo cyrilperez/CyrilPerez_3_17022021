@@ -274,13 +274,16 @@ section {
   margin-top: 0;
 }
 .button_steps {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+}
+@media (min-width: 768px) {
+  .button_steps {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .button_step {
   padding: 1.5rem;
@@ -291,19 +294,22 @@ section {
   display: flex;
   position: relative;
 }
+@media (min-width: 768px) {
+  .button_step {
+    width: 20%;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .button_step {
+    width: 25%;
+  }
+}
 .button_step:hover {
   background-color: #e4d5f6;
   opacity: 0.9;
-}
-@media (min-width: 64rem) {
-  .button_step {
-    flex: 1;
-    margin: 0;
-    margin-left: 2rem;
-  }
-  .button_step:first-child {
-    margin-left: 0.75rem;
-  }
 }
 .button_step:first-child {
   margin-top: 0;
