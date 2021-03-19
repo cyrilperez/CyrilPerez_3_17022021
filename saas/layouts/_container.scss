@@ -39,12 +39,7 @@
 	}
 }
 
-.fonctionnement {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 3em;
 
-}
 
 .restaurantCard {
 	display: flex;
@@ -151,7 +146,8 @@
     justify-content: space-between;
     background-color: whitesmoke;
     /* margin-top: -1em; */
-    overflow: overlay;
+    z-index: 1;
+    position: relative;
     border-radius: 50px 50px 0px 0px;
     /* width: 100%; */
 	&_title {
