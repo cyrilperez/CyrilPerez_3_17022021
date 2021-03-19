@@ -145,56 +145,13 @@ section {
   text-align: center;
   color: white;
   box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
+  cursor: pointer;
 }
 .btn-filled {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
 }
 .btn-filled:hover {
   filter: brightness(90%);
-}
-.btn-fonctionnement {
-  display: flex;
-  color: black;
-  margin: 1em 0em 0em 2.5em;
-  padding: 1.5em 0em 1.5em 0em;
-  background-color: rgba(192, 192, 192, 0.15);
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  border-radius: 1.5em;
-}
-.btn-fonctionnement:hover {
-  background-color: #e4d5f6;
-  opacity: 0.9;
-}
-.btn_puce {
-  position: relative;
-  left: -4em;
-  color: white;
-  background-color: #9356DC;
-  padding: 0.3em 0.6em;
-  border-radius: 1em;
-}
-.btn:hover .btn_puce {
-  opacity: 1.5;
-}
-.btn-iconSize {
-  font-size: 1.3em;
-  color: grey;
-}
-.btn:hover .btn-iconSize {
-  color: #9356DC;
-  opacity: 1.5;
-}
-.btn_icon {
-  position: relative;
-  left: -2.5em;
-  font-weight: bold;
-}
-.btn_text {
-  position: relative;
-  left: -1em;
-  font-weight: bold;
 }
 
 .heart i:nth-of-type(1) {
@@ -286,6 +243,7 @@ section {
   }
 }
 .button_step {
+  cursor: pointer;
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
