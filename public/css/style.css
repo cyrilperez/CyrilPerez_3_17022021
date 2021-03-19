@@ -445,11 +445,9 @@ section {
   align-content: center;
   justify-content: space-between;
   background-color: whitesmoke;
-  /* margin-top: -1em; */
   z-index: 1;
   position: relative;
   border-radius: 50px 50px 0px 0px;
-  /* width: 100%; */
 }
 .nameRestaurant_title {
   margin-left: 1em;
@@ -464,7 +462,7 @@ section {
   position: relative;
   bottom: -1em;
   margin-bottom: 1em;
-  max-width: 100%;
+  max-width: 90%;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin-left: 1em;
