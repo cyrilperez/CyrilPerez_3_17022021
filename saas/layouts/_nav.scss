@@ -1,0 +1,80 @@
+.button {
+    padding: ( 1rem + 1rem ) 1rem;
+  
+    &_title {
+      margin-top: 0;
+    }
+  
+    &_steps {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+    }
+  
+    &_step {
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      display: flex;
+      position: relative;
+      &:hover {
+        background-color: lighten($couleurPrimaireViolet, $amount: 30%);
+        opacity: 0.9;
+     }
+
+      
+  
+      @media (min-width:64rem) {
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem;
+  
+        &:first-child {
+          margin-left: 0.75rem;
+        }
+      }
+  
+      &:first-child {
+        margin-top: 0;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &::before {
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        background: $couleurPrimaireViolet;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        left: -0.75rem;
+      }
+    }
+  
+    &_icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
+      .button_step:hover &{
+        color: $couleurPrimaireViolet;
+        opacity: 0.9;
+     }
+    }
+    &_text {
+    font-weight: 700;
+    }
+    
+  }
+  
