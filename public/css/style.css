@@ -82,6 +82,9 @@ a {
   list-style-type: none;
   text-decoration: none;
 }
+a:visited {
+  color: black;
+}
 
 li {
   list-style-type: none;
