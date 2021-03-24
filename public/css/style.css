@@ -418,7 +418,7 @@ section {
 }
 .restaurantCard_label {
   position: absolute;
-  left: 15em;
+  left: 16em;
   top: 1em;
   background-color: #98e2cf;
   padding: 5px 11px;
@@ -506,6 +506,7 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0;
 }
 .article_description {
   font-size: 0.8em;

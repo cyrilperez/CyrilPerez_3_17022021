@@ -106,7 +106,7 @@
 
 	&_label{
 		position: absolute;
-		left: 15em;
+		left: 16em;
 		top: 1em;
 		background-color: hsla(165,56%,74%,1);
 		padding: 5px 11px;
@@ -197,11 +197,11 @@
 	&_name{
 		font-weight: 500;
 		padding-top: 0.5em;
-		
-    font-size: 1.1em;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
+		font-size: 1.1em;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		margin:0;
 	}
 	&_description {
 		
