@@ -12,11 +12,11 @@
     
     &-filled {
       @include background-gradient(bottom, $couleurPrimaireViolet, $couleurSecondaireRose);
-    &:hover {
+      &:hover {
         filter: brightness(90%);
         color: white;
+      }
     }
-}
 }
 
 /* remplissage du coeur */
@@ -78,8 +78,6 @@
         z-index: 1;
         }
 
-    }}
-}
-.heart2 {
-
+    }
+  }
 }
