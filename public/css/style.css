@@ -483,6 +483,8 @@ section {
   justify-content: space-between;
   border-radius: 1em;
   opacity: 0;
+  padding-bottom: 0;
+  padding-top: 0;
   overflow: hidden;
   animation: transition 1s ease-in-out 2s forwards;
 }
