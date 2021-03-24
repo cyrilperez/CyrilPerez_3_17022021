@@ -85,6 +85,9 @@ a {
 a:visited {
   color: black;
 }
+a:link {
+  color: black;
+}
 
 li {
   list-style-type: none;
@@ -147,7 +150,6 @@ section {
   border: none;
   border-radius: 2em;
   text-align: center;
-  color: white;
   box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
   cursor: pointer;
 }
@@ -156,15 +158,18 @@ section {
 }
 .btn-filled:hover {
   filter: brightness(90%);
+  color: white;
 }
 
 /* remplissage du coeur */
 .heart i:nth-of-type(1) {
   position: relative;
   left: 24px;
+  transition-duration: 0.5s;
 }
 .heart i:nth-of-type(2n) {
   color: white;
+  transition-duration: 0.5s;
 }
 .heart:hover i:nth-of-type(1) {
   display: none;
@@ -179,9 +184,11 @@ section {
 .heart_index i:nth-of-type(1) {
   position: relative;
   left: 24px;
+  transition-duration: 0.5s;
 }
 .heart_index i:nth-of-type(2n) {
   color: white;
+  transition-duration: 0, 5s;
 }
 .heart_index:hover i:nth-of-type(1) {
   background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
@@ -198,12 +205,6 @@ section {
   -webkit-background-clip: text;
   color: transparent;
   z-index: 1;
-}
-
-.heart2 {
-  background-image: -webkit-linear-gradient(bottom, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .headerMenu {
