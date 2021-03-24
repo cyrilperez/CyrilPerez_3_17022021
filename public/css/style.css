@@ -357,6 +357,7 @@ section {
   margin-bottom: 1em;
   box-shadow: 3px 3px 6px rgba(128, 128, 128, 0.3);
   border-radius: 15px;
+  position: relative;
 }
 .restaurantCard:hover {
   border: 2px solid #99E2D0;
@@ -409,9 +410,9 @@ section {
   object-position: 0% 100%;
 }
 .restaurantCard_label {
-  position: relative;
-  left: 8em;
-  top: -9.5em;
+  position: absolute;
+  left: 15em;
+  top: 1em;
   background-color: #98e2cf;
   padding: 5px 11px;
   font-size: 0.9em;

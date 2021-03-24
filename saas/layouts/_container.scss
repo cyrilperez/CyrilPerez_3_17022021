@@ -51,6 +51,7 @@
     margin-bottom: 1em;
 	box-shadow: 3px 3px 6px rgb(128, 128, 128, .3);
 	border-radius: 15px;
+	position : relative;
 	&:hover{
 		border: 2px solid $couleurTertiaireBleu;
 	}
@@ -103,9 +104,9 @@
 	}
 
 	&_label{
-		position: relative;
-		left: 8em;
-		top: -9.5em;
+		position: absolute;
+		left: 15em;
+		top: 1em;
 		background-color: hsla(165,56%,74%,1);
 		padding: 5px 11px;
 		font-size: 0.9em;
