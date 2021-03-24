@@ -29,6 +29,7 @@
 	&-menu{
 		font-weight: 300;
 		margin-left: 1em;
+		margin-bottom: -0.5em;
 		font-size: 1.3em;
 		font-variant-caps: all-petite-caps;
 		&-line{
@@ -253,6 +254,10 @@
 	  animation-delay:  #{$i/11}s;
 	}
   }
+
+.listeArticle {
+	  margin-top: 1em;
+}
 
 @media (min-width: 768px) {
 	.fonctionnement {

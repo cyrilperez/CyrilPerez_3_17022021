@@ -62,6 +62,12 @@ section {
         &-bold{
             font-weight: 500;
         }
+        &:visited {
+            color: white;
+        }
+        &:link {
+            color: white;
+        }
     }
 }
 

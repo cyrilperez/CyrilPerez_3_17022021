@@ -132,6 +132,12 @@ section {
 .footer_menu-bold {
   font-weight: 500;
 }
+.footer_menu:visited {
+  color: white;
+}
+.footer_menu:link {
+  color: white;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -338,6 +344,7 @@ section {
 .menu-menu {
   font-weight: 300;
   margin-left: 1em;
+  margin-bottom: -0.5em;
   font-size: 1.3em;
   font-variant-caps: all-petite-caps;
 }
@@ -575,6 +582,10 @@ section {
 
 .delay-9 {
   animation-delay: 0.8181818182s;
+}
+
+.listeArticle {
+  margin-top: 1em;
 }
 
 @media (min-width: 768px) {
